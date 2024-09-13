@@ -1,0 +1,37 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "quiz-app-77cde",
+          "appId": "1:775693534440:android:4f33f87b30cab88b07355d",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "quiz-app-77cde",
+          "configurations": {
+            "android": "1:775693534440:android:4f33f87b30cab88b07355d",
+            "ios": "1:775693534440:ios:4f5b3584a6704fc407355d",
+            "web": "1:775693534440:web:db7e3ace5d7918c007355d"
+          }
+        }
+      }
+    }
+  },
+  "hosting": {
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
