@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_typing_uninitialized_variables, use_super_parameters
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -33,6 +35,9 @@ class TextForm extends StatelessWidget {
         SizedBox(
           width: containerWidth,
           child: TextFormField(
+            obscureText: hintText
+                .toLowerCase()
+                .contains("password"), // Hide input for password fields
             inputFormatters: digitsOnly != null
                 ? [FilteringTextInputFormatter.digitsOnly]
                 : [],
